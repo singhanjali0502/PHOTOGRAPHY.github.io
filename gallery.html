@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Photography Site</title>
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href = "simplelightbox-master/dist/simple-lightbox.css">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <div class = "nav-section">
+                <div class = "brand-and-navBtn" style="background: var(--lightGreen);">
+                    <span class = "brand-name">
+                        PHOTOGRAPHY
+                    </span>
+                    <span class = "navBtn flex">
+                        <i class = "fas fa-bars"></i>
+                    </span>
+                </div>
+
+                <!-- navigation menu -->
+                <nav class = "top-nav" style="background: #000000;">
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "gallery.html">Gallery</a></li>
+                        <li><a href = "blog.html">Blog</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <span class = "search-icon" style = "background: var(--lightGreen);">
+                    <i class = "fas fa-search"></i>
+                </span>
+            </div>
+        <!-- end of header -->
+
+        <!-- main -->
+        <section class = "section-three">
+            <div class = "container">
+                <div class = "gallery">
+                    <a href = "Image/image2.jpeg">
+                        <div class = "single-img">
+                            <img src = "Image/image2.jpeg" height="500" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/image3.jpeg">
+                        <div class = "single-img">
+                            <img src = "Image/image3.jpeg" height="500" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/image4.jpeg">
+                        <div class = "single-img">
+                            <img src = "Image/image4.jpeg" height="500" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/pic1.jpg">
+                        <div class = "single-img">
+                            <img src = "Image/pic1.jpg" height="300" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/pic2.jfif">
+                        <div class = "single-img">
+                            <img src = "Image/pic2.jfif" height="300" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/pic3.jpg">
+                        <div class = "single-img">
+                            <img src = "Image/pic3.jpg" height="300"  alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/gallery1.jpg">
+                        <div class = "single-img">
+                            <img src = "Image/gallery1.jpg" height="300" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/pic5.jpg">
+                        <div class = "single-img">
+                            <img src = "Image/pic5.jpg" height="300" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "Image/gallery2.jpg">
+                        <div class = "single-img">
+                            <img src = "Image/gallery2.jpg" height="300" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of main -->
+
+        <!-- chat box -->
+
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="color: #f1f1f1;">Chat</h1>
+
+    <label for="msg"><b style="color: #f1f1f1;">Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+        <!-- chat box -->
+
+
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container container">
+                <div>
+                    <h2>ICLAIRVAUXI</h2>
+                    <p>To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.</p>
+                </div>
+                <div>
+                    <h3>Free Subscription!</h3>
+                    <p>Make a habit of canceling every subscription to anything you don't have time to read.</p>
+
+                    <div class = "subs">
+                        <i class = "fas fa-envelope"></i>
+                        <input type = "email" id = "email" placeholder="Email Address">
+                        <button type = "submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; Copyright ICLAIRVAUXI. SIMPLE AND NICE</p>
+        </footer>
+        <!-- end of footer -->
+        
+        <!-- LIGHTBOX -->
+        <script src = "simplelightbox-master/dist/simple-lightbox.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
